@@ -7,16 +7,15 @@ import image1 from "../images/Ellipse 1.png";
 
 const MyUrls = () => {
   return (
-    <main
+    <div
       id="myurls"
-      className="mt-32 w-full flex flex-col items-center self-center"
+      className="relative top-48 w-full flex flex-col items-center self-center"
     >
-      {/* <div></div> */}
       <TextAnimate
         text="Optimize Your Online Experience With Our Advance Url Shortening Solution."
-        className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl "
+        className="text-5xl lg:text-center sm:text-3xl leading-loose"
       />
-      <p className="my-6 text-lg font-medium w-[781px]">
+      <p className="my-6 text-lg font-medium w-[781px] text-center">
         Personalize your shortened URLs to align with your brand identity.
         Utilize custom slugs, branded links, and domain customization options to
         reinforce your brand presence and enhance user engagement.
@@ -94,44 +93,26 @@ const MyUrls = () => {
         />
       </div>
 
-      <div className="box bg-green-500 mt-40">
-        <div className="frame-wrapper">
-          <div className="frame">
-            <div className="one-stop-four-wrapper">
-              <h1 className="one-stop-four">
-                <span className="text-wrapper">One Stop.Four</span>
-                <span className="span"> Possibilities</span>
-                <span className="text-wrapper-2">.</span>
-              </h1>
-            </div>
-            <div className="div">
-              <div className="frame-2">
-                <div className="frame-3">
-                  <div className="text-wrapper-3">3M</div>
-                  <div className="text-wrapper-4">Active users</div>
-                </div>
-                <div className="frame-4">
-                  <div className="text-wrapper-5">60M</div>
-                  <p className="links-QR-codes">Links &amp; QR codes created</p>
-                </div>
-              </div>
-              <div className="frame-5">
-                <div className="div-wrapper">
-                  <div className="frame-6">
-                    <div className="frame-7">
-                      <div className="text-wrapper-6">1B</div>
-                      <div className="clicked-scanned">
-                        Clicked &amp; Scanned connections
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="frame-8">
-                  <div className="text-wrapper-7">300k</div>
-                  <div className="text-wrapper-8">App Integrations</div>
-                </div>
-              </div>
-            </div>
+      <div className="flex text-mainTextColor my-24">
+        <h2 className="basis-1/4 text-mainTextColor text-3xl font-bold">
+          One Stop Four <span className="text-primaryBlue">Possibilities</span>
+        </h2>
+        <div className="basis-3/4 flex gap-x-8 justify-end">
+          <div className="flex flex-col gap-y-2">
+            <h2 className="text-2xl font-bold">3M</h2>
+            <p className="max-w-[180px]">Active users</p>
+          </div>
+          <div className="flex flex-col gap-y-2">
+            <h2 className="text-2xl font-bold">60M</h2>
+            <p className="max-w-[170px]">Links & QR codes created</p>
+          </div>
+          <div className="flex flex-col gap-y-2">
+            <h2 className="text-2xl font-bold">1B</h2>
+            <p className="max-w-[170px]">Clicked & Scanned connections</p>
+          </div>
+          <div className="flex flex-col gap-y-2">
+            <h2 className="text-2xl font-bold">300k</h2>
+            <p className="max-w-[180px]">App Integrations</p>
           </div>
         </div>
       </div>
@@ -188,7 +169,7 @@ const MyUrls = () => {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 

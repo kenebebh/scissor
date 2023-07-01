@@ -17,20 +17,13 @@ import { ReactComponent as Vector2 } from "./images/Vector 2.svg";
 
 function App() {
   return (
-    <div className="kene w-full h-full">
+    <div className="w-full h-full">
       <section>
-        <div>
-          <Navigation />
-        </div>
+        <Navigation />
       </section>
 
-      <section>
-        <div
-          id="myurls"
-          className="h-90 w-auto p-4 border-3 bg-white-400 m8 box-content"
-        >
-          <MyUrl />
-        </div>
+      <section className="px-12">
+        <MyUrl />
       </section>
 
       <section className=" flex justify-center first-line:flex-col items-center">
