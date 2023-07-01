@@ -1,5 +1,5 @@
 import TextAnimate from "../Components/TextAnimate";
-import {Link} from "react-scroll"
+import { Link } from "react-scroll";
 // import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
@@ -7,35 +7,39 @@ import image1 from "../images/Ellipse 1.png";
 
 const MyUrls = () => {
   return (
-    <main id="myurls" className="w-full flex flex-col items-center self-center">
+    <main
+      id="myurls"
+      className="mt-32 w-full flex flex-col items-center self-center"
+    >
       {/* <div></div> */}
       <TextAnimate
         text="Optimize Your Online Experience With Our Advance Url Shortening Solution."
         className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl "
       />
-      <p className="my-6 text-base font-medium w-[781px]">
+      <p className="my-6 text-lg font-medium w-[781px]">
         Personalize your shortened URLs to align with your brand identity.
         Utilize custom slugs, branded links, and domain customization options to
         reinforce your brand presence and enhance user engagement.
       </p>
       <div className="flex items-center m-3">
-        <Link to="register" smooth={true}
-            spy={true}
-            offset={-50}
-            duration={500}>
-
-
-        <motion.button
-          className="rounded-full  border border-primaryBlue py-2.5 px-8  text-white focus:outline-none focus:z-10 bg-primaryBlue mr-4 text-sm font-medium hover:text-blue-500 hover:bg-white"
-          whileHover={{
-            y: -2,
-          }}
-          whileTap={{ scale: 0.9 }}
+        <Link
+          to="register"
+          smooth={true}
+          spy={true}
+          offset={-50}
+          duration={500}
         >
-         Sign up
-        </motion.button>
+          <motion.button
+            className="rounded-full  border border-primaryBlue py-2.5 px-8  text-white focus:outline-none focus:z-10 bg-primaryBlue mr-4 text-md font-medium hover:text-blue-500 hover:bg-white"
+            whileHover={{
+              y: -2,
+            }}
+            whileTap={{ scale: 0.9 }}
+          >
+            Sign up
+          </motion.button>
         </Link>
-        <Link to="/LearnMore" className="text-primaryBlueBase text-sm ">
+        <Link to="/LearnMore" className="text-primaryBlueBase text-md ">
           Learn more
         </Link>
       </div>
@@ -90,7 +94,7 @@ const MyUrls = () => {
         />
       </div>
 
-      <div className="box !relative mt-40">
+      <div className="box bg-green-500 mt-40">
         <div className="frame-wrapper">
           <div className="frame">
             <div className="one-stop-four-wrapper">
@@ -132,13 +136,12 @@ const MyUrls = () => {
         </div>
       </div>
 
-      <div className="flex items-start gap-24 mt-32">
-        <div className="flex flex-col gap-4 items-end ">
-          {/* <img className="lineTwo !self-start" alt="Line" src={LineTwo} /> */}
+      <div className="flex gap-x-24 mt-20">
+        <div className="basis-1/3 flex flex-col gap-4 items-end ">
           <h1 className="text-4xl font-semibold self-start">
             Why choose <span className="text-blue-600">Scissors</span>
           </h1>
-          <p className="text-base w-[370px] h-[192px]">
+          <p className="text-base w-auto h-[192px]">
             Scissors is the hub of everything that has to do with your link
             management. We shorten your URLs, allow you creating custom ones for
             your personal, business, event usage. Our swift QR code creation,
@@ -147,38 +150,42 @@ const MyUrls = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-4 items-end">
-          <h1 className=" text-4xl font-semibold self-start">URL Shortening</h1>
-          <p className="flex-col text-base w-[370px] h-[192px]">
-            Scissor allows you to shorten URLs of your business, events. Shorten
-            your URL at scale, URL redirects.
-          </p>
-        </div>
+        <div className="basis-2/3 grid grid-cols-2 grid-rows-2 gap-x-8">
+          <div className="flex flex-col gap-4 items-center">
+            <h1 className=" text-4xl font-semibold self-start">
+              URL Shortening
+            </h1>
+            <p className="flex-col text-base">
+              Scissor allows you to shorten URLs of your business, events.
+              Shorten your URL at scale, URL redirects.
+            </p>
+          </div>
 
-        <div className="flex flex-col gap-4 items-end">
-          <h1 className=" text-4xl font-semibold self-start">Custom URLs</h1>
-          <p className="flex-col text-base w-[370px] h-[192px]">
-            With Scissor, you can create custom URLs, with the length you want!
-            A solution for socials and businesses.
-          </p>
-        </div>
-      </div>
+          <div className="flex flex-col gap-4 items-center">
+            <h1 className=" text-4xl font-semibold self-start">Custom URLs</h1>
+            <p className="flex-col text-base">
+              With Scissor, you can create custom URLs, with the length you
+              want! A solution for socials and businesses.
+            </p>
+          </div>
 
-      <div className="flex  gap-24">
-        <div className="flex flex-col gap-4 items-end">
-          <h1 className=" text-4xl font-semibold self-start">QR Codes</h1>
-          <p className="flex-col text-base w-[370px] h-[192px]">
-            Generate QR codes to your business, events. Bring your audience and
-            customers to your doorstep with this scan and go solution.
-          </p>
-        </div>
+          <div className="flex flex-col gap-4 items-center">
+            <h1 className=" text-4xl font-semibold self-start">QR Codes</h1>
+            <p className="flex-col text-base">
+              Generate QR codes to your business, events. Bring your audience
+              and customers to your doorstep with this scan and go solution.
+            </p>
+          </div>
 
-        <div className="flex flex-col gap-4 items-end">
-          <h1 className=" text-4xl font-semibold self-start">Data Analytics</h1>
-          <p className="flex-col text-base w-[370px] h-[192px]">
-            Receive data on the usage of either your shortened URL, custom URLs
-            or generated QR codes. Embedded to monitor progress.
-          </p>
+          <div className="flex flex-col gap-4 items-center">
+            <h1 className=" text-4xl font-semibold self-start">
+              Data Analytics
+            </h1>
+            <p className="flex-col text-base">
+              Receive data on the usage of either your shortened URL, custom
+              URLs or generated QR codes. Embedded to monitor progress.
+            </p>
+          </div>
         </div>
       </div>
     </main>

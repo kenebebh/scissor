@@ -4,7 +4,7 @@ import NavLogo from "../images/Logo.png";
 
 const Navigation = () => {
   return (
-    <header className="glass w-full  py-1 font-medium flex items-center justify-between bg-gradient-to-r from-blue-50 to-white fixed backdrop:blur z-10 ">
+    <header className="glass w-full py-4 font-medium flex items-center justify-between bg-gradient-to-r from-blue-50 to-white fixed backdrop:blur z-10 ">
       <div className="w-full flex justify-around items-center">
         <nav>
           <Link to="myurls">
@@ -77,21 +77,23 @@ const Navigation = () => {
           >
             Log in
           </Link>
-<Link to="register" smooth={true}
+          <Link
+            to="register"
+            smooth={true}
             spy={true}
             offset={-50}
-            duration={500}>
-
-          <motion.button
-            className="ml-2 mr-1 rounded-full border border-primaryBlue py-2.5 px-6  text-white bg-primaryBlue hover:bg-white hover:text-primaryBlue text-sm font-medium"
-            whileHover={{
-              y: -2,
-            }}
-            whileTap={{ scale: 0.9 }}
+            duration={500}
           >
-            Sign up
-          </motion.button>
-</Link>
+            <motion.button
+              className="ml-2 mr-1 rounded-full border border-primaryBlue py-2.5 px-6  text-white bg-primaryBlue hover:bg-white hover:text-primaryBlue text-sm font-medium"
+              whileHover={{
+                y: -2,
+              }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Sign up
+            </motion.button>
+          </Link>
         </nav>
       </div>
     </header>

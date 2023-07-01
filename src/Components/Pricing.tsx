@@ -1,18 +1,12 @@
 import checkCircle from "../images/check-circle.png";
 import checkCircleTwo from "../images/check-circle2.png";
 
-
 const Pricing = () => {
   return (
     <div
       id="pricing"
       className="w-full flex flex-col items-center self-center mt-[80px]"
     >
-      {/* <div className="flex flex-col justify-center items-center mt-5 h-20">
-        <div className=" bg-blue-600" />
-        <div className="w-2 h-96 black-gradient" />
-      </div> */}
-
       <h1 className=" items-center !text-5xl font-semibold">
         A <span className="text-blue-600">price perfect</span> for your needs.
       </h1>
@@ -196,7 +190,7 @@ const Pricing = () => {
                       src={checkCircle}
                     />
                     <div className="text-wrapper-5">API Access</div>
-                   </div>
+                  </div>
                   <div className="frame-7One">
                     <img
                       className="check-circle-4One"
@@ -256,7 +250,6 @@ const Pricing = () => {
       </div>
     </div> */}
     </div>
-
   );
 };
 
